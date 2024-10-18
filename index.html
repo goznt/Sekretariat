@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+    
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+  
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background: url(Image/PosterBG.png  ) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+           
+        }
+
+
+
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .box {
+            height: 75px; /* Mengubah tinggi menjadi lebih pendek */
+            width: 650px;  /* Mengubah lebar menjadi lebih panjang */
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff; /* Menambahkan latar belakang putih */
+            border-radius: 8px; /* Menambahkan sudut yang membulat */
+            transition: box-shadow 0.3s, transform 0.3s; /* Menambahkan efek transisi */
+            cursor: pointer; /* Mengubah kursor saat hover */
+            display: flex; /* Menggunakan flexbox untuk penataan */
+            align-items: center; /* Vertikal center */
+            justify-content: center; /* Horizontal center */
+            font-weight: bold; /* Membuat teks menjadi tebal */
+        }
+
+        .box:hover {
+            transform: scale(1.1); /* Efek zoom saat hover */
+        }
+        
+        .top {
+            box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .right {
+            box-shadow: 10px 0 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .bottom {
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .left {
+            box-shadow: -10px 0 20px -5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .all {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body >
+
+    <h1>SEKRETARIAT</h1>
+    <h1>KEJAKSAAN TINGGI SULAWESI UTARA</h1>
+   <a style="text-decoration:none" href="https://docs.google.com/document/d/1Lnn9ENMG44rvqh0CP7rkt291fMiPe8CQ/edit?usp=sharing&ouid=102382658760333109062&rtpof=true&sd=true"  target="_blank" ><div class="box top" >NOTA DINAS</div></a> 
+   <a style="text-decoration:none" href="https://docs.google.com/document/d/17V8_16TkEcOYDDAhDBBEA0ab-koMjACN/edit?usp=sharing&ouid=102382658760333109062&rtpof=true&sd=true" target="_blank" ><div class="box right">NOTULA RAPAT</div></a> 
+    <a style="text-decoration:none" href="https://docs.google.com/document/d/1BsM2LKcdIlMEaJrXRF69xX_4WX_jjT8a/edit?usp=sharing&ouid=102382658760333109062&rtpof=true&sd=true" target="_blank" ><div class="box bottom">SURAT TUGAS</div></a>
+   <a style="text-decoration:none" href="https://docs.google.com/document/d/1hNJ13w3gL9nDc2Xk7LNRA5svkmmn4kVH/edit?usp=sharing&ouid=102382658760333109062&rtpof=true&sd=true" target="_blank"><div class="box left">SURAT PERJALANAN DINAS</div></a>
+    <a style="text-decoration:none"  href="https://sipede.kejaksaan.go.id/login" target="_blank"><div class="box all" >SIPEDE</div></a>
+</body>
+
+</html>
